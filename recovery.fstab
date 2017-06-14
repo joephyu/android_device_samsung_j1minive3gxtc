@@ -1,0 +1,22 @@
+#
+#<mnt_point>     <type>           <src>     <fs_mgr_flags>    <mnt_flags and options>
+#
+#
+# Compiled by Myanmar Developer ( Line Line )
+#
+
+/system      ext4          /dev/block/platform/sdio_emmc/by-name/SYSTEM
+/preload     ext4          /dev/block/platform/sdio_emmc/by-name/HIDDEN  
+/data        ext4          /dev/block/platform/sdio_emmc/by-name/userdata     length=-16384
+/cache       ext4          /dev/block/platform/sdio_emmc/by-name/CACHE
+/efs         ext4          /dev/block/platform/sdio_emmc/by-name/efs
+/productinfo ext4          /dev/block/platform/sdio_emmc/by-name/prodnv
+/boot        emmc          /dev/block/platform/sdio_emmc/by-name/KERNEL
+/recovery    emmc          /dev/block/platform/sdio_emmc/by-name/RECOVERY
+/wmodem      emmc          /dev/block/platform/sdio_emmc/by-name/MODEM
+/wdsp        emmc          /dev/block/platform/sdio_emmc/by-name/WDSP
+/sdcard      vfat          /dev/block/platform/sdio_sd/mmcblk1p1
+/persistent  emmc          /dev/block/platform/sdio_emmc/by-name/PERSISTENT   
+/external_sd     vfat       /dev/block/mmcblk1p1    /dev/block/mmcblk1   flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg         vfat       /dev/block/sda1         /dev/block/sda       flags=display="USB-OTG";storage;wipeingui;removable
+
