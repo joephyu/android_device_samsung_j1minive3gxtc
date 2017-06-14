@@ -1,0 +1,7 @@
+ro.chipname=SC7727SE
+ro.sf.lcd_density=240
+persist.sys.usb.config=mtp,adb
+#
+# system.prop for j1minive3gxtc
+#
+
